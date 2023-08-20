@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Musician</title>
+    <style>
+      p {
+        font-size: large;
+      }
+      #fname.email.about-you.photo {
+        display: flex;
+        padding-left: 40px;
+      }
+      label{
+        display: inline-block;
+        width: 150px;
+
+      }
+      /* .align{
+        display: inline-block;
+        width: 150px;
+
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ARIJIT SINGH</h1>
+    </header>
+    <main>
+      <p>
+        Arijit Singh is an Indian singer and music composer. The recipient of
+        several accolades including a National Film Award and seven Filmfare
+        Awards, he has recorded songs in several Indian languages.
+      </p>
+      <p>
+        Visit the
+        <a href="https://arijit-singh.com/">Website</a>
+        or his
+        <a href="https://www.youtube.com/channel/UC4pDfyacMrps84vZ7pFoHQQ"
+          >YouTube Channel</a
+        >
+      </p>
+      <cite>Fan webpage by Pawan Mehta</cite>
+    </main>
+    <hr>
+
+    <!--
+      Social Network
+    -->
+    <h2>Join a social network</h2>
+
+    <form action="/action_page.js" method="post" enctype="multipart/form-data">
+      <div>
+        <label for="fullName" class="align">Full name:</label>
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          value="Enter your full name"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email" class="align">Email address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value="Enter your email address"
+          required
+        />
+      </div>
+      <br />
+
+      <div>
+        <label for="about-you" class="align">About you:</label>
+        <textarea id="about-you" name="about-you" rows="3" cols="50">
+        Write about yourself.</textarea
+        >
+      </div>
+      <br />
+
+      <div>
+        <label for="picture" class="align">Photo:</label>
+
+        <input type="file" id="picture" name="picture" />
+      </div>
+      <br />
+
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+<hr>
+    <!-- Starting Lineup   -->
+
+    <h2>Starting Lineup</h2>
+
+    <form action="/action_page.js">
+      <p>
+      <fieldset>
+        <legend>Status:</legend>
+        <input type="radio" id="draft" name="status" value="draft" />
+        <label for="draft">Draft</label>
+        <input type="radio" id="final" name="status" value="final" checked/>
+        <label for="final">Final</label>
+      </fieldset>
+    </p>
+    <p>
+    <label for="select-date">Date:</label> 
+    <select name="gameDate" id="select-date"> 
+        <option value="March 20">March 20</option> 
+        <option value="March 24">March 24</option> 
+        <option value="April 2">April 2</option> 
+        <option value="April 6">April 6</option>
+        <option value="April 13">April 13</option>  
+    </select>
+    </p>
+      <p>
+      <fieldset>
+        <legend>Players:</legend>
+        <input type="checkbox" id="player1" name="player" value="Aarav Agarwal" />
+        <label for="player1"> Aarav Agarwal </label><br />
+        <input type="checkbox" id="player2" name="player" value="Ava Johnson" />
+        <label for="player2"> Ava Johnson</label><br />
+        <input type="checkbox" id="player3" name="player" value="Julio Ortiz" />
+        <label for="player3"> Julio Ortiz </label><br />
+        <input type="checkbox" id="player2" name="player" value="Liam Rubio" />
+        <label for="player2"> Liam Rubio</label><br />
+        <input type="checkbox" id="player3" name="player" value="Emma Witherspoon" />
+        <label for="player3"> Emma Witherspoon </label><br /><br />
+
+      </fieldset>
+    </p>
+      
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
+    </form>
+<hr>
+
+<!-- Happy Birthday Message creator-->
+
+<h1>Happy Birthday Message Creator</h1>
+
+    <form action="/action_page.js" method="post" enctype="multipart/form-data">
+      <!--1st-->
+      <p>
+        <label for="message">Message:</label>
+        <textarea id="about-you" name="about-you" rows="2" cols="40">
+        </textarea
+        >
+      </p>
+<!--2nd email-->
+        <p>
+          <label for="email">Email address:</label>
+          <input 
+          pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-
+          9-]+)*"
+            type="email"
+            id="email"
+            name="email"
+            value=""
+            required
+          />
+        </p>
+          
+
+        <!--3rd Date-->
+        <p>
+        <label for="date">Date to send:</label>
+        <input type="date" id="date" name="date">
+      </p>
+
+      <p>
+        <label for="color">Message color:</label>
+        <input type="color" id="color" name="color" value="#ff0000">
+      </p>
+
+      <p>
+        <label for="blinks">Number of Blinks:</label>
+        <input
+          type="number"
+          id="blinks"
+          name="blinks"
+          value="Number of Blinks"
+          min="0" 
+          max="10" 
+          value="0"
+          required
+        />
+      </p>
+      
+      <p>
+        <label for="volume">Music volume:</label>
+        <input type="range" min="0" max="50" value="20" class="slider" id="myRange">
+      </p>
+
+      <p>
+
+        <input type="submit" value="Send Birthday Message" />
+      </p>
+    </form>
+<p><hr></p>
+    <footer>
+      <cite>Designed by Pawan K Mehta</cite>
+    </footer>
+  </body>
+</html>
